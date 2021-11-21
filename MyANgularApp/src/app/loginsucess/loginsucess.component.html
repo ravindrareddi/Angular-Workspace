@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>{{title}}</title>
+ 
+    <style>
+
+
+
+    </style>  
+    
+</head>
+<body>
+    <form #loginForm="ngForm" >
+    <table style="width:100%; border-collapse:collapse; font:14px Arial,sans-serif;">
+        <tr>
+            <td colspan="2" style="padding:10px 20px;background-color:#acb3b9;" >
+                <h1 style="font-size:24px;">Form Creation</h1>
+            </td>
+        </tr>
+        <tr style="height:50px;">
+            <td style="width:20%; padding:20px;  vertical-align: top;">
+                Label name
+            </td>
+            <td style="padding:20px;  vertical-align:top;">
+               <select ng-model="view.activeResource.ValueType" name="inputelements"  id="inputelements" style="width: 169px;
+        margin: 2px;">
+            
+            <option value="text" selected>text</option>
+            <option value="textarea">textarea</option>
+            
+        </select>
+            </td>
+        </tr>
+            <tr style="height:50px;">
+            <td style="width:20%; padding:20px;  vertical-align: top;">
+                Label value
+            </td>
+            <td style="padding:20px;  vertical-align:top;">
+               <input type="labelname" ngModel placeholder="Enter label Value" name="labelname" id="labelname">
+            </td>
+        </tr>
+        <tr>
+            <td  style="padding:5px;  text-align:center;">
+               <button  class="btn btn-success" (click)="addClick();" >Add Element</button>
+            </td>
+            <td style="padding:20px;  vertical-align:top;">
+                &nbsp;
+             </td>
+        </tr>
+    </table>
+    </form>
+    <form #formview>
+     <div id="tabdiv">   
+    <table id='dyelement' style="width:100%; border-collapse:collapse; font:14px Arial,sans-serif;">
+        <tr id='tr1'>
+            <td colspan="2" style="padding:10px 20px;background-color:#acb3b9;" >
+                <h1 style="font-size:24px;">Form View</h1>
+            </td>
+        </tr>
+        
+</table>
+</div>
+</form>    
+    <router-outlet></router-outlet>
+</body>
+</html>

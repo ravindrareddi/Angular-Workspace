@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>{{title}}</title>
+ 
+    <style>
+
+
+
+    </style>  
+    
+</head>
+<body>
+  
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    
+    <form #loginForm="ngForm" >
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="email" ngModel placeholder="Enter Email" name="username" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" ngModel placeholder="Enter Password" name="password" id="password">
+
+        <button class="btn btn-success" (click)="btnClick(loginForm.value);"  >Log In</button>
+             
+    </form>
+    <router-outlet></router-outlet>
+</body>
+</html>
