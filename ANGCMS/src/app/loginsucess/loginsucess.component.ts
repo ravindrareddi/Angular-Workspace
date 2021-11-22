@@ -10,7 +10,7 @@ import * as $ from 'jquery';
   styleUrls: ['./loginsucess.component.css']
 })
 export class LoginsucessComponent implements OnInit {
-
+  strEmail:string | undefined
   title = 'Dynamic form';
   private incp:number = 1;
   private dynahtml:(any);
@@ -20,6 +20,7 @@ export class LoginsucessComponent implements OnInit {
   ngOnInit(){
     console.log(sessionStorage.getItem('email'));
     console.log(sessionStorage.getItem('password'));
+    this.strEmail = sessionStorage.getItem('email')?.toString();
     console.log('insidesucess');
   //   console.log(this.router.getCurrentNavigation().extras.state.example); 
     //this.interactionService.interactionmessage$.subscribe(message =>{console.log('-----new---')});

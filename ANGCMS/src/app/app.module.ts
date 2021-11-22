@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { LoginsucessComponent } from './loginsucess/loginsucess.component';
+import { NewcompComponent } from './newcomp/newcomp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    NewcompComponent
   ],
   imports: [
     BrowserModule,
