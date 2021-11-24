@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
   btnClick(data:NgForm)
   {
     //console.log(data.value.username);
-    console.log('ytytyt');
+  
     sessionStorage.setItem('email',data.value.username);
     sessionStorage.setItem('password',data.value.password);
       
