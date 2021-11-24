@@ -24,9 +24,7 @@ export class LoginComponent implements OnInit {
     sessionStorage.setItem('password',data.value.password);
       
     this.router.navigateByUrl('/loginsucess');
-  
-
-  }
+    }
   ngOnInit(): void {
   }
 
