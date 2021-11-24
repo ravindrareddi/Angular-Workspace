@@ -11,7 +11,7 @@ import { Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  title = 'login form';
+  title = 'login form1';
   @Output() 
   stringOutput: EventEmitter<String> = new EventEmitter<String>();
   constructor(private router: Router) {
